@@ -1,0 +1,40 @@
+
+classGameScene: SKScene {
+  private var ball : SKShapeNode = SKShapeNode(circleOfRadius: 50) 
+  
+  var vel:CGPoint = CGPoint(x: 3, y: 2.7
+
+  override func didMove(to view: SKView){
+  ball.fillColor = .white
+    self.addChild(ball) 
+  
+  }
+
+
+
+ 
+  ovverride func update(_ currentTime: TimeInterval) {
+  
+  self.ball.position.x = self.ball.position.x + vel.x
+  self.bal.position.y = self.ball.position.y + vel.y  
+  
+
+  
+ 
+ if abs(ball.position.x) > self.frame.width/2{ 
+    vel.x = vel.x * -1
+ 
+ }
+ 
+ vv if abs(ball.position.yy > self.frame.width/2{ 
+    vel.x = vel.x * -1
+ 
+ }
+
+  
+  
+
+}
+  //gamescene 
+
+
